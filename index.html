@@ -1,0 +1,495 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Decima aplicacion movil</title>
+
+<!--grupo CSS-->
+ <link rel="stylesheet" href="css/tema-app10.min.css"/>
+ <link rel="stylesheet"href="css/jquery.mobile.icons-1.4.5.min.css"/> 
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>  
+ <!--grupo JavaScript--> 
+ <script src="js/jquery-1.11.2.min.js"></script>
+ <script src="js/jquery.mobile-1.4.5.min.js"></script>
+ <script src="js/acciones.js"></script>
+ <script src="phonegap.js"></script>
+ <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+ </script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine2/style.css" />
+<script type="text/javascript" src="engine2/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+</head><body onLoad="MM_preloadImages('imagenes/customLogo.jpg','imagenes/TURISMO.jpeg','imagenes/descarga.jpg','imagenes/criminologia2.jpg','imagenes/images.jpg','imagenes/sistemas-3-580x300.jpg','imagenes/linea.gif')">
+
+ <div data-role="page" id="Principal" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Carreras Universitarias</h1>
+ </div>
+ <div data-role="main" class="ui-content">
+ </div>
+
+ <div> 
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+  <li class="ui-first-child ui -last-child">
+  <a href ="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+   <h2>LICENCIATURA EN TURISMO</h2>
+  </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>INGENIERIA DE SOFTWARE</h2>
+     </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>LICENCIATURA EN CRIMINOLOGIA CRIMINOLOGIA</h2>
+   </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>PERFILES DE EGRESO</h2>
+   </a>
+  </li>
+  </li>
+  <li class="ui-first-child ui-last-child">
+   <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>¿QUE QUIERES ESTUDIAR?</h2> 
+   </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>DATOS DEL DESARROLLADOR</h2> 
+   </a>
+  </li>
+  </ul>
+ </div>
+ <div data-role="collapsible" data-content-theme="false">
+       <h3>Te damos más opciones..</h3>
+    <div data-role="main" class="ui-content" align="center">
+ <div style="width:100%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://universidadesdemexico.mx/carreras/puebla" data-role="button">
+    <h3>Preparate</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+   <img src="imagenes/graduados.png" width="49%" height="27%"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gtm','','imagenes/linea.gif',1)"><img src="imagenes/dolar-oro.jpg" width="330" height="196" id="gtm"></a></div>
+ <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+     <img src="res/android/mdpi.png" width="46" height="46"> 
+   <div>
+     <h4>Carreras Universitarias</h4> 
+     <h4>María Elena Gómez Tepox</h4> 
+   </div> 
+ </div>
+</div> 
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>LICENCIATURA EN TURISMO </h1>
+   </div>
+   <div data-role="content" align="justify">
+   <div data-role="collapsible" data-content-theme="false">
+       <h3>Turismo</h3>
+        <div>
+          <img src="imagenes/turismo.jpg" width="49%" height="27%">
+        </div>
+     </div>
+     <div>
+       <h4>El título de Licenciatura en Turismo Internacional es el título que otorga la Universidad Anáhuac Puebla para la carrera de Licenciatura en Turismo<br>
+De qué se trata:<br><br>
+*Planear la gestión de empresas turísticas con enfoque estratégico e integral.<br>
+*Identificar, prever y administrar los riesgos legales, económicos, políticos, financieros, tecnológicos, operativos y ambientales que afectan a la organización pública y privada para la correcta toma de decisiones, con base en el análisis cuantitativo y cualitativo de la información.<br>
+*Participar y dirigir el diseño y desarrollo de nuevos productos y nuevas experiencias turísticas, con base en el perfil del consumidor para permitir a las organizaciones privadas y públicas diferenciar y ampliar la oferta de servicios, de acuerdo a la demanda turística.<br>
+*Trabajar con organismos públicos enfocados al desarrollo y la planeación turística.</h4>
+       <center>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('uik','','imagenes/TURISMO.jpeg',0)"><img src="imagenes/logo_turismo.jpg" width="239" height="209" id="uik"></a></p>
+       </center>
+     </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div>
+   </div>
+ </div>
+  <div data-role="main" class="ui-content" align="center">
+ <div style="width:70%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="https://www.uaeh.edu.mx/campus/tizayuca/turismo.html" data-role="button" >
+    <h3>Más Información UAEH</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+  </div>
+   </li>
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Visor 1</h2> 
+   </a>
+  </li>
+    <div data-role="collapsible" data-content-theme="false">
+       <h3>Sedes</h3>
+        <div><h4>*Benemérita Universidad Autónoma de Puebla.<br>*UDES.<br>*UAEH</h4>
+        </div>
+  </div> 
+   <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Carreras Universitarias</h4>
+  </div>
+</div>
+ </div>
+ 
+ 
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>INGENIERIA DE SOFTWARE</h1>
+   </div>
+   <div data-role="content" align="justify">
+   <div data-role="collapsible" data-content-theme="false">
+       <h3>Ingenieria</h3>
+        <div>
+         <div data-role="main" class="ui-content" align="center">
+ <div style="width:70%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=211&Itemid=167" data-role="button">
+    <h3>Sede BUAP</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+        </div>
+     </div>
+     <div>
+       <h4>El Ingeniero de Software es un prominente miembro de una nueva generación de profesionistas, altamente especializado y capaz de desempeñar cualquier rol del ciclo de desarrollo de software, que identifica y comprende problemas para crear eficaces aplicaciones de software. No se trata de un “programador con título de ingeniero”, sino de un experto en desarrollar aplicaciones estratégicas para las empresas. Domina conocimientos sobre modelado de negocios, ingeniería de requerimientos, diseño y arquitectura de aplicaciones, interacción humano-computadora, programación, aplicaciones Web, administración de proyectos, calidad, bases de datos, animación y aplicaciones 3D interactivas, videojuegos, seguridad en aplicaciones, etc.</h4>
+       <center>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('kil','','imagenes/sistemas-3-580x300.jpg',1)"><img src="imagenes/customLogo.jpg" width="395" height="237" id="kil"></a></p>
+       </center>
+     </div>
+   </div>
+   <div data-role="main" class="ui-content">
+    <div>
+   </div>
+ </div>
+  <div data-role="main" class="ui-content" align="center">
+ <div style="width:70%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=350&Itemid=20" data-role="button" >
+    <h3>Becas UPAEP</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+  </div>
+    <div data-role="collapsible" data-content-theme="false">
+       <h3>Sedes</h3>
+        <div><h4>*Benemérita Universidad Autónoma de Puebla.<br>*UPAEP</h4>
+          <p><img src="imagenes/Escudo_BUAP_Positivo_2.png" width="248" height="192" alt="bu"><img src="imagenes/logo-upaep.jpg" width="340" height="195" alt="upaep"></p>
+        </div>
+  </div> 
+   <div data-role="footer" data-theme="b" data-position="fixed">
+     <h4>Carreras Universitarias</h4>
+  </div>
+</div>
+ </div>
+   
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>LICENCIATURA EN CRIMINOLOGIA</h1>
+    </div>
+<div data-role="content" align="justify"> 
+  <div> 
+        <h4>Un licenciado en Criminología es un profesionista preparado para afrontar las realidades sociales de inseguridad que vive el país, líder comprometido con la sociedad, propositivo, que busque continuamente una tendencia preventiva; para mejorar el sistema de Justicia Mexicano que vislumbre nuevos modelos y políticas criminológicas, con la capacidad de generar nuevos conocimientos en el estudio del criminal y la víctima para una mejor procuración e impartición de justicia.</h4>
+        <p><img src="imagenes/i52.jpg" width="765" height="226" alt="crimen"></p> 
+        
+    <div data-role="main" class="ui-content"></div>
+ </div>
+ <div data-role="main" class="ui-content" align="center">
+ <div style="width:70%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://cmas.siu.buap.mx/portal_pprd/wb/EDUCATIVA/criminologia" data-role="button">
+    <h3>Te damos una opción:BUAP</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+     <div data-role="collapsible" data-content-theme="false">
+       <h3>Sedes</h3>
+        <div><h4>*Benemérita Universidad Autónoma de Puebla.<br>*UVP</h4>
+          <center>
+            <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('lpl','','imagenes/images.jpg',1)"><img src="imagenes/criminología_1.png" width="335" height="196" id="lpl"></a></p>
+          </center>
+        </div>
+     </div> 
+     <div data-role="collapsible" data-content-theme="false">
+       <h3>Requisitos de Ingreso</h3>
+        <div><h4>                                                                                                                                                                                    Documentación:<br>
+
+**Acta de Nacimiento (original y copia).<br>
+**C.U.R.P.<br>
+**Certificado de Estudios de Secundaria (original y copia).<br>
+**Certificado de Bachillerato ó equivalente (original y copia).<br>
+**6 Fotografías blanco y negro, tamaño infantil, adheribles (fondo blanco y ropa clara).<br>
+**Certificado médico.<br>
+**Fotocopias de los documentos.<br>
+**Carta de antecedentes no penales.<br>
+** El Certificado de Bachillerato ó equivalente, deberá estar legalizado ante la Secretaría de Gobernación si no fue expedido por instituciones incorporadas al Sistema Educativo Nacional.</h4>
+        </div>
+     </div> 
+     <div data-role="collapsible" data-content-theme="false">
+       <h3>Plan de Estudios</h3>
+        <div> <div data-role="main" class="ui-content" align="center">
+ <div style="width:100%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://lasallecancun.edu.mx/oferta-educativa/carreras-profesionales/criminologia-y-criminalistica/plan-de-estudios-licenciatura-en-criminologia-y-criminalistica/" data-role="button">
+    <h3>Plan de estudios</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div> </div>
+     </div>
+    <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Carreras Universitarias </h4>
+    </div>
+</div>
+</div>
+  
+  
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Perfiles de Egreso.</h1>
+  </div>
+<div data-role="content" align="center"> 
+    <div style="width:70%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.upaep.mx/index.php?option=com_content&view=article&id=211&Itemid=167" data-role="button" >
+    <h3>Licenciatura en Turismo: UAEH</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+  <div> 
+    <div data-role="content" align="center">
+    <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://www.upedregal.edu.mx/portal/maestria_software.html" data-role="button" >
+    <h3>Ingenieria en Software</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+   </div>
+    </div>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/customLogo.jpg',1)"><img src="imagenes/udelp.png" width="304" height="236" alt="ul"></a><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('crtr','','imagenes/criminologia2.jpg',1)"><img src="imagenes/portada-forense.jpg" width="397" height="212" id="crtr"></a></p>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/TURISMO.jpeg',1)"><img src="imagenes/turismo1.jpg" width="488" height="246" id="Image19"></a></p>
+   <li class="ui-first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Visor 2</h2>
+     </a>
+  </li>
+   <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Carreras Universitarias</h4>
+        </div>
+  </div>
+</div>
+   
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>TEST VOCACIONAL</h1>
+</div>
+<div data-role="content" align="center"> 
+    <div style="width:50%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+   <li class="ui-first-child ui-last-child">
+   <a href="http://quevasaestudiar.com/test-vocacional/test_01.php" data-role="button" >
+    <h3>Realiza tu Test</h3>
+    </a>
+    </li>
+    </ul>
+    </div>
+  </div>
+    <img src="imagenes/Carraras-universitarias-mejor-pagas.jpg" width="51%" height="28%"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('dgh','','imagenes/descarga.jpg',1)"><img src="imagenes/graduacion.jpg" width="368" height="248" id="dgh"></a>
+    <div> 
+      <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Carreras Universitarias</h4>
+        </div>
+</div>
+</div>
+  
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>DATOS DEL DESARROLLADOR</h1>
+    </div>
+    <div data-role="content" align="justify"> 
+      <div> 
+       <center> <table width="403" height="379" border="1">
+          <tr>
+            <td width="137">Nombre Alumno</td>
+            <td width="250"><p>María Elena Gómez Tepox.</p></td>
+          </tr>
+          <tr>
+            <td>Semestre y Grupo</td>
+            <td>4 &quot;G&quot;</td>
+          </tr>
+          <tr>
+            <td>Submodulo</td>
+            <td><p>Desarrolla Aplicaciones Móviles 
+            </p>
+            <p> (DAM)</p></td>
+          </tr>
+          <tr>
+            <td>Nombre del Docente</td>
+            <td>Lic. José Antonio Gómez Hernández.</td>
+          </tr>
+        </table>
+        </center>
+        <br>
+        <center><img src="imagenes/yo.jpg" width="170" height="242" alt="yo"></center>
+      </div>
+    </div>
+      <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Carreras Universitarias</h4>
+        </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Visor 1</h1>
+    </div>
+    <div data-role="content" align="justify"> 
+      <div> 
+      </div>
+      <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/anhuac.png" alt="Anáhuac" title="Anáhuac" id="wows1_0"/></li>
+		<li><img src="data1/images/carrarasuniversitariasmejorpagas.jpg" alt="Carraras-universitarias-mejor-pagas" title="Carraras-universitarias-mejor-pagas" id="wows1_1"/></li>
+		<li><img src="data1/images/criminologa_1.png" alt="criminología_1" title="criminología_1" id="wows1_2"/></li>
+		<li><img src="data1/images/criminologia2.jpg" alt="criminologia2" title="criminologia2" id="wows1_3"/></li>
+		<li><img src="data1/images/customlogo.jpg" alt="customLogo" title="customLogo" id="wows1_4"/></li>
+		<li><img src="data1/images/descarga.jpg" alt="descarga" title="descarga" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/dolaroro.jpg" alt="slideshow jquery" title="dolar-oro" id="wows1_6"/></a></li>
+		<li><img src="data1/images/escudo_buap_positivo_2.png" alt="Escudo_BUAP_Positivo_2" title="Escudo_BUAP_Positivo_2" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Anáhuac"><span><img src="data1/tooltips/anhuac.png" alt="Anáhuac"/>1</span></a>
+		<a href="#" title="Carraras-universitarias-mejor-pagas"><span><img src="data1/tooltips/carrarasuniversitariasmejorpagas.jpg" alt="Carraras-universitarias-mejor-pagas"/>2</span></a>
+		<a href="#" title="criminología_1"><span><img src="data1/tooltips/criminologa_1.png" alt="criminología_1"/>3</span></a>
+		<a href="#" title="criminologia2"><span><img src="data1/tooltips/criminologia2.jpg" alt="criminologia2"/>4</span></a>
+		<a href="#" title="customLogo"><span><img src="data1/tooltips/customlogo.jpg" alt="customLogo"/>5</span></a>
+		<a href="#" title="descarga"><span><img src="data1/tooltips/descarga.jpg" alt="descarga"/>6</span></a>
+		<a href="#" title="dolar-oro"><span><img src="data1/tooltips/dolaroro.jpg" alt="dolar-oro"/>7</span></a>
+		<a href="#" title="Escudo_BUAP_Positivo_2"><span><img src="data1/tooltips/escudo_buap_positivo_2.png" alt="Escudo_BUAP_Positivo_2"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.0</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    </div>
+    <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Carreras Universitarias</h4>
+        </div>
+</div>
+</div>
+    
+    <div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+      <h1>Visor 2</h1>
+    </div>
+    <div data-role="content" align="justify"> 
+      <div> 
+      </div>
+     <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container2">
+<div class="ws_images"><ul>
+		<li><img src="data2/images/logo_turismo.jpg" alt="logo_turismo" title="logo_turismo" id="wows2_0"/></li>
+		<li><img src="data2/images/logoupaep.jpg" alt="logo-upaep" title="logo-upaep" id="wows2_1"/></li>
+		<li><img src="data2/images/portadaforense.jpg" alt="portada-forense" title="portada-forense" id="wows2_2"/></li>
+		<li><img src="data2/images/sistemas3580x300.jpg" alt="sistemas-3-580x300" title="sistemas-3-580x300" id="wows2_3"/></li>
+		<li><img src="data2/images/software1.jpg" alt="software1" title="software1" id="wows2_4"/></li>
+		<li><img src="data2/images/turismo.jpg" alt="TURISMO" title="TURISMO" id="wows2_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data2/images/turismo1.jpg" alt="angular slider" title="turismo1" id="wows2_6"/></a></li>
+		<li><img src="data2/images/udelp.png" alt="udelp" title="udelp" id="wows2_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="logo_turismo"><span><img src="data2/tooltips/logo_turismo.jpg" alt="logo_turismo"/>1</span></a>
+		<a href="#" title="logo-upaep"><span><img src="data2/tooltips/logoupaep.jpg" alt="logo-upaep"/>2</span></a>
+		<a href="#" title="portada-forense"><span><img src="data2/tooltips/portadaforense.jpg" alt="portada-forense"/>3</span></a>
+		<a href="#" title="sistemas-3-580x300"><span><img src="data2/tooltips/sistemas3580x300.jpg" alt="sistemas-3-580x300"/>4</span></a>
+		<a href="#" title="software1"><span><img src="data2/tooltips/software1.jpg" alt="software1"/>5</span></a>
+		<a href="#" title="TURISMO"><span><img src="data2/tooltips/turismo.jpg" alt="TURISMO"/>6</span></a>
+		<a href="#" title="turismo1"><span><img src="data2/tooltips/turismo1.jpg" alt="turismo1"/>7</span></a>
+		<a href="#" title="udelp"><span><img src="data2/tooltips/udelp.png" alt="udelp"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slider</a> by WOWSlider.com v8.0</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine2/wowslider.js"></script>
+<script type="text/javascript" src="engine2/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+    </div>
+      <div data-role="main" class="ui-content">
+    <div>
+  </div>
+ </div>
+        <div data-role="footer" data-theme="b" data-position="fixed">
+          <h4>Carreras Universitarias</h4>
+        </div>
+</div>
+</div>
+      
+</body>
+</html>
